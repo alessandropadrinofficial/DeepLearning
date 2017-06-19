@@ -78,5 +78,5 @@ with tf.Session() as sess:
             print('Epoch: {:}, Batch: {:} -'
                  'Loss: {:f}, Validation Accuracy: {:f}'.format(n +1, batch+1, loss, valid_acc))
             
-test_acc = sess.run(accuracy, feed_dict={x: mnist.test.images[:test_valid_size], y: mnist.test.labels[:test_valid_size], keep_prob: 1.})
-print('Testing Accuracy: {}'.format(test_acc))    
+    test_acc = sess.run(accuracy, feed_dict={x: mnist.test.images[:test_valid_size], y: mnist.test.labels[:test_valid_size], keep_prob: 1.})
+    print('Testing Accuracy: {}'.format(test_acc))    
